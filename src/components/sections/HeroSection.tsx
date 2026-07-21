@@ -96,16 +96,16 @@ export function HeroSection() {
       </div>
 
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1, duration: 1 }}
+      className="mt-12 flex flex-col items-center gap-2"
       >
         <span className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">Scroll</span>
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        >
+      <motion.div
+      animate={{ y: [0, 10, 0] }}
+      transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+      >
           <ChevronDown className="w-5 h-5 text-primary" />
         </motion.div>
       </motion.div>
