@@ -50,9 +50,12 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <button className="px-5 py-2 text-sm font-medium bg-primary/10 text-primary border border-primary/20 rounded-full hover:bg-primary/20 transition-colors">
-            Resume
-          </button>
+          <Link
+          href="#contact"
+          className="px-5 py-2 text-sm font-medium bg-primary/10 text-primary border border-primary/20 rounded-full hover:bg-primary/20 transition-colors"
+          >
+            Hire Me
+          </Link>
         </nav>
 
         {/* Mobile Toggle */}
