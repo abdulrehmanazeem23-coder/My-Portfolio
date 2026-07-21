@@ -51,8 +51,8 @@ export function Navbar() {
             </Link>
           ))}
           <Link
-          href="#contact"
-          className="px-5 py-2 text-sm font-medium bg-primary/10 text-primary border border-primary/20 rounded-full hover:bg-primary/20 transition-colors"
+            href="#contact"
+            className="px-5 py-2 text-sm font-medium bg-primary/10 text-primary border border-primary/20 rounded-full hover:bg-primary/20 transition-colors"
           >
             Hire Me
           </Link>
@@ -74,7 +74,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background/95 backdrop-blur-xl absolute top-20 left-0 w-full flex flex-col items-center justify-center gap-8"
+            className="md:hidden bg-background/95 backdrop-blur-xl absolute top-20 left-0 w-full flex flex-col items-center justify-center gap-8 pb-20"
           >
             {navLinks.map((link) => (
               <Link
@@ -86,6 +86,15 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
+
+            {/* Added Hire Me Button for Mobile */}
+            <Link
+              href="#contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="px-8 py-3 text-lg font-medium bg-primary/10 text-primary border border-primary/20 rounded-full hover:bg-primary/20 transition-colors mt-4"
+            >
+              Hire Me
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
