@@ -17,7 +17,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="min-h-screen py-28 relative flex flex-col justify-center items-center">
       <div className="container mx-auto px-6 relative z-10 flex flex-col items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
