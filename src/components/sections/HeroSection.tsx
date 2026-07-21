@@ -70,7 +70,7 @@ export function HeroSection() {
           </Link>
           
           <a
-            href="/resume.pdf"
+            href="./resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-foreground font-semibold rounded-full hover:bg-white/10 transition-all hover:scale-105 active:scale-95 w-full sm:w-auto backdrop-blur-md"
