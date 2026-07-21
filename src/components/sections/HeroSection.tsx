@@ -19,15 +19,7 @@ export function HeroSection() {
   return (
     <section className="min-h-screen py-28 relative flex flex-col justify-center items-center">
       <div className="container mx-auto px-6 relative z-10 flex flex-col items-center text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-block px-4 py-2 mb-6 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-medium tracking-wide backdrop-blur-md"
-        >
-          My name is
-        </motion.div>
-
+        
         <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -77,13 +69,15 @@ export function HeroSection() {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
           
-          <Link
-            href="#"
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-foreground font-semibold rounded-full hover:bg-white/10 transition-all hover:scale-105 active:scale-95 w-full sm:w-auto backdrop-blur-md"
           >
             <Download className="w-5 h-5" />
             Resume
-          </Link>
+          </a>
           
           <Link
             href={portfolioData.personalInfo.contact.github}
@@ -96,16 +90,16 @@ export function HeroSection() {
       </div>
 
       <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1, duration: 1 }}
-      className="mt-12 flex flex-col items-center gap-2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="mt-12 flex flex-col items-center gap-2"
       >
         <span className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">Scroll</span>
-      <motion.div
-      animate={{ y: [0, 10, 0] }}
-      transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+        >
           <ChevronDown className="w-5 h-5 text-primary" />
         </motion.div>
       </motion.div>
