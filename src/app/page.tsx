@@ -10,6 +10,7 @@ import { ServicesSection } from "@/components/sections/ServicesSection";
 import { CertificationsSection } from "@/components/sections/CertificationsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { AnimatedBackground } from "@/components/layout/AnimatedBackground";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <ServicesSection />
       <CertificationsSection />
       <ContactSection />
+      <ScrollToTop />
     </>
   );
 }
